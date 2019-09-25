@@ -5,10 +5,12 @@ Vue.use(Router);
 
 export default new Router({
     routes: [
+        // 控制板
         {
             path: '/',
             redirect: '/dashboard'
         },
+        // 主页
         {
             path: '/',
             component: resolve => require(['../components/common/Home.vue'], resolve),
@@ -99,6 +101,7 @@ export default new Router({
                 }
             ]
         },
+        // 登录
         {
             path: '/login',
             component: resolve => require(['../components/page/Login.vue'], resolve)
